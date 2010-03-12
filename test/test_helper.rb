@@ -2,13 +2,14 @@ require 'rubygems'
 require 'rails_generator'
 require 'active_record'
 require 'action_controller'
-#require 'action_controller/test_case'
+require 'action_controller/test_case'
 #require 'active_support/test_case'
 
 #	The html_test plugin must be right next to this
 #	OR already have its lib accessible.
 $:.unshift "#{File.dirname(__FILE__)}/../../html_test/lib"
 require File.dirname(__FILE__) + '/../init'
+
 
 ActiveRecord::Base.establish_connection(
 	:adapter => "sqlite3", :database => ":memory:")
