@@ -1,4 +1,6 @@
-if Rails.env == 'test'
+#if Rails.env == 'test'
+#if RAILS_ENV == 'test'
+if !defined?(RAILS_ENV) || RAILS_ENV == 'test'
 	require 'html_test'
 	require 'html_test_extension'
 
