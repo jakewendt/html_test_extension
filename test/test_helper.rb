@@ -1,8 +1,7 @@
 require 'rubygems'
-require 'rails_generator'
 require 'active_record'
 require 'action_controller'
-require 'action_controller/test_case'
+#require 'action_controller/test_case'
 #require 'active_support/test_case'
 
 #	The html_test plugin must be right next to this
@@ -36,6 +35,11 @@ class ActiveSupport::TestCase
 end
 
 
+#require 'rails_generator'	#	<- did this for cattr_accessor. DON'T
+#	causes the ugly failures
+#	Now that i've commented it out, I don't need it.
+#	I don't quite get it.
+#	cattr_accessor is still used in validator.
 #
 #	I don't know what I did or did not do, but rake test 
 #	failures are UGLY and very unhelpful.
