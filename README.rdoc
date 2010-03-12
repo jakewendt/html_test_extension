@@ -12,4 +12,11 @@ This plugin adds a bit of functionality and control to the {html_test plugin}[ht
 == ToDos
 
 * I would like to create tests, but the idea of having a plugin dependent on another plugin bugs me a bit.  I don't want to be a hippocrit.  Outside of a rails app, how do you really make testing work?
+* I'm working on tests, which require html_test to be next to html_test_extension.  Something in html_test makes a failure really ugly and unhelpful.  It basically dumps a bunch of internal stuff ...
+
+  /Library/Ruby/Gems/1.8/gems/rails-2.3.5/lib/rails/backtrace_cleaner.rb:51:in `filter_backtrace': undefined method `backtrace_cleaner' for Rails:Module (NoMethodError)
+  from /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testcase.rb:131:in `add_failure'
+  from /Library/Ruby/Gems/1.8/gems/activesupport-2.3.5/lib/active_support/testing/setup_and_teardown.rb:67:in `run'
+
+* not very helpful at all
 
