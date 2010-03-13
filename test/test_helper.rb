@@ -33,22 +33,3 @@ end
 class ActiveSupport::TestCase
 
 end
-
-
-#require 'rails_generator'	#	<- did this for cattr_accessor. DON'T
-#	causes the ugly failures
-#	Now that i've commented it out, I don't need it.
-#	I don't quite get it.
-#	cattr_accessor is still used in validator.
-#
-#	I don't know what I did or did not do, but rake test 
-#	failures are UGLY and very unhelpful.
-#	I blame html_test cause my code is very similar
-#	to other plugins and they fail tests nicely.
-#
-#	validating does NOT add to the number of assertions
-#	UNLESS it fails, then the validator asserts an error
-#	so that it shows up.  So don't count the assertions
-#	to see if there is a difference with and without
-#	revalidate_all, because there won't be
-#
