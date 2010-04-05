@@ -4,9 +4,13 @@ require 'action_controller'
 #require 'action_controller/test_case'
 #require 'active_support/test_case'
 
+$:.unshift "#{File.dirname(__FILE__)}"
+require 'application_controller'
 #	The html_test plugin must be right next to this
 #	OR already have its lib accessible.
 $:.unshift "#{File.dirname(__FILE__)}/../../html_test/lib"
+#	OR
+$:.unshift "#{File.dirname(__FILE__)}/../../../peter/html_test/lib"
 require File.dirname(__FILE__) + '/../init'
 
 
